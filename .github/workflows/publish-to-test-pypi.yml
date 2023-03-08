@@ -16,7 +16,7 @@ jobs:
       run: >-
         python -m
         pip install
-        build
+        build setuptools
         --user
     - name: Build a binary wheel and a source tarball
       run: >-
@@ -28,7 +28,9 @@ jobs:
         .
     - name: Build a binary wheel and a source tarball for 2
       run: >-
-        python setup_2.py sdist bdist_wheel
+        python setup_2.py
+        sdist
+        bdist_wheel
     - name: Publish distribution 📦 to Test PyPI
       if: startsWith(github.ref, 'refs/tags')
       uses: pypa/gh-action-pypi-publish@master
