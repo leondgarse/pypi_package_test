@@ -10,14 +10,14 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
-exec(open("pypi_package_test/version.py").read())
+exec(open("pypi_package_test_leondgarse/version.py").read())
 setup(
     name="pypi_package_test",
     version=__version__,
     description="pypi_package_test",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/leondgarse/pypi_package_test",
+    url="https://github.com/leondgarse/pypi_package_test_leondgarse",
     author="Leondgarse",
     author_email="leondgarse@google.com",
     classifiers=[
@@ -35,7 +35,7 @@ setup(
         "Topic :: Software Development",
     ],
     # Note that this is a string of words separated by whitespace, not a list.
-    keywords="pypi_package_test",
+    keywords="pypi_package_test_leondgarse",
     packages=find_packages(exclude=[]),
     include_package_data=True,
     install_requires=[],
