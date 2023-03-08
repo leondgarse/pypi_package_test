@@ -12,7 +12,7 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 exec(open("pypi_package_test_leondgarse/version.py").read())
 setup(
-    name="pypi_package_test_2",
+    name="pypi_package_test_leondgarse_2",
     version=__version__,
     description="pypi_package_test_leondgarse",
     long_description=long_description,
