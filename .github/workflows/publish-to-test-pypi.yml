@@ -26,6 +26,9 @@ jobs:
         --wheel
         --outdir dist/
         .
+    - name: Build a binary wheel and a source tarball for 2
+      run: >-
+        python setup_2.py sdist bdist-wheel
     - name: Publish distribution 📦 to Test PyPI
       if: startsWith(github.ref, 'refs/tags')
       uses: pypa/gh-action-pypi-publish@master
